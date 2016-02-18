@@ -4,30 +4,52 @@ body {
   background: #282828;
 }
 
-.mainPageContent {
+#mainPageContent {
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
 
-.mainPageTitle {
+#mainPageTitle {
   font-size: 40px;
   letter-spacing: 6px;
 }
 
-.mainPageButton {
+#mainPageButton {
   margin-top: 20px;
-  position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
 
-.copyRight {
+#copyRight {
+  color: #4A4A4A;
   position: fixed;
-    bottom: 0;
-    right: 0;
+  bottom: 0;
+  right: 0;
+  margin-right: 7px;
+  margin-bottom: 2px;
+}
+
+#sideNav {
+  float: left;
+  width: 265px;
+  background: #282828;
+  height: 100vh;
+  box-shadow: none;
+}
+
+nav div {
+  height: 100px;
+  width: 265px;
+  float: left;
+}
+
+nav div:first-child {
+  font-size: 24px;
+}
+
+nav div a {
+  /* TODO: Center anchor tags within the div */
 }
