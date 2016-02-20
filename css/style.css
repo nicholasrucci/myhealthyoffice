@@ -4,26 +4,6 @@ body {
   color: #eeeeee;
 }
 
-nav a {
-  height: 100px;
-  width: 100%;
-  float: left;
-}
-
-nav div:first-child {
-  font-size: 24px;
-  height: 150px;
-}
-
-nav a {
-  color: #FFFFFF;
-  width: 100%;
-}
-
-.btn-flat {
-  color: #FFFFFF !important;
-}
-
 #landingPageBody {
   background: #282828;
 }
@@ -47,7 +27,7 @@ nav a {
   transform: translate(-50%, -50%);
 }
 
-#copyRight {
+#copyright {
   color: #4A4A4A;
   position: fixed;
   bottom: 0;
@@ -56,18 +36,36 @@ nav a {
   margin-bottom: 2px;
 }
 
-#sideNav {
-  float: left;
-  width: 100%;
+/* NAVIGATION */
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 275px;
   background: #282828;
-  height: 100vh;
 }
 
-#mainContent {
-  background-color: #282828;
-  height: 100vh;
-}
-
-#navContainer {
+ul {
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
+ ul li {
+   margin-bottom: 25px;
+   width: 100%;
+   text-align: center
+ }
+
+ /* MAIN CONTENT */
+
+ .mainContent {
+   position: relative;
+   margin-left: 275px;
+ }
+
+ .wrapper {
+   width: 90%;
+   margin: 0 auto;
+ }
