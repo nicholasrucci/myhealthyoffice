@@ -4,6 +4,8 @@ body {
   color: #eeeeee;
 }
 
+/* LANDING PAGE */
+
 #landingPageBody {
   background: #282828;
 }
@@ -36,6 +38,14 @@ body {
   margin-bottom: 2px;
 }
 
+/* BRAND */
+
+.brand {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+}
+
 /* NAVIGATION */
 
 .navigation {
@@ -47,6 +57,10 @@ body {
   background: #282828;
 }
 
+.btn-flat {
+  color: #EEE !important;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -55,7 +69,7 @@ ul {
  ul li {
    margin-bottom: 25px;
    width: 100%;
-   text-align: center
+   text-align: center;
  }
 
  /* MAIN CONTENT */
