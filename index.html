@@ -5,13 +5,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.$ = window.jQuery = require('./assets/jquery.min.js');
+        window.Hammer = require('./assets/hammer.min.js');
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <title>My Healthy Office</title>
   </head>
-  <body>
-    <div id="mainPageContent">
-      <h1 id="mainPageTitle">MY HEALTHY OFFICE</h1>
+  <body class="landingPageBody">
+    <div id="landingPageContent">
+      <h1 id="landingPageTitle">MY HEALTHY OFFICE</h1>
       <a href="views/timer.html" class="waves-effect waves-light btn" id="mainPageButton">Enter Dashboard</a>
     </div>
 

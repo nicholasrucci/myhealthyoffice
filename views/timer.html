@@ -5,25 +5,58 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.$ = window.jQuery = require('../assets/jquery.min.js');
+        window.Hammer = require('../assets/hammer.min.js');
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <title>Pomodoro Timer</title>
   </head>
   <body>
 
-    <nav id="sideNav">
-      <div class="">
-        <a href="#">MY HEALTHY OFFICE</a>
+    <!-- Navbar goes here -->
+
+    <!-- Page Layout here -->
+    <div class="row">
+
+      <div class="col s3 side-nav fixed">
+        <nav id="sideNav">
+          <div class="valign-wrapper">
+            <a class="center-align" href="#">MY HEALTHY OFFICE</a>
+          </div>
+
+          <a class="valign-wrapper">
+            <a class="center-align waves-effect waves-teal btn-flat" href="#">CALENDAR</a>
+          </a>
+        </nav>
       </div>
 
-      <div class="">
-        <a href="#">POMODORO TIMER</a>
+      <div class="col s9">
+        <div id="mainContent">
+        </div>
       </div>
-    </nav>
-
-    <div class="mainContent">
 
     </div>
+
+    <!-- <div class="row">
+
+      <div class="navContainer col s3">
+        <nav id="sideNav">
+          <div class="valign-wrapper">
+            <a class="center-align" href="#">MY HEALTHY OFFICE</a>
+          </div>
+
+          <a class="valign-wrapper">
+            <a class="center-align waves-effect waves-teal btn-flat" href="#">CALENDAR</a>
+          </a>
+        </nav>
+      </div>
+
+      <div class="col s9">
+        <button type="button" name="button" class="btn-flat">HELLO</button>
+      </div>
+
+    </div> -->
 
   </body>
 </html>

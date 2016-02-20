@@ -10,7 +10,9 @@ const Menu = electron.Menu;
 var mainWindow = null;
 
 var dockMenu = Menu.buildFromTemplate([
-  { label: 'New Window', click: function() { console.log('New Window'); } },
+  { label: 'New Window', click: function() {
+    console.log('New Window');
+  }},
   { label: 'New Window with Settings', submenu: [
     { label: 'Basic' },
     { label: 'Pro' }
@@ -33,7 +35,11 @@ app.on('window-all-closed', function() {
 // initialization and is ready to create browser windows.
 app.on('ready', function() {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1060, height: 600});
+  mainWindow = new BrowserWindow({
+    width: 1060,
+    height: 600,
+    resizable: true
+  });
 
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/index.html');
