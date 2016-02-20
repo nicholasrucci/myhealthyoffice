@@ -37,7 +37,8 @@ app.on('ready', function() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 1060,
-    height: 600,
+    'min-width': 1000,
+    'min-height': 600,
     resizable: true
   });
 
