@@ -1,26 +1,29 @@
 'use strict';
 
-const electron = require('electron');
-const app = electron.app;  // Module to control application life.
+const electron      = require('electron');
+// const Log           = require('log');
+// const log           = new Log('info');
+const app           = electron.app;  // Module to control application life.
 const BrowserWindow = electron.BrowserWindow;  // Module to create native browser window.
-const Menu = electron.Menu;
+// const Menu          = electron.Menu;
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 var mainWindow = null;
 
-var dockMenu = Menu.buildFromTemplate([
-  { label: 'New Window', click: function() {
-    console.log('New Window');
-  }},
-  { label: 'New Window with Settings', submenu: [
-    { label: 'Basic' },
-    { label: 'Pro' }
-  ]},
-  { label: 'New Command...' }
-]);
+// TODO: Menu not working
+// var dockMenu = Menu.buildFromTemplate([
+//   { label: 'New Window', click: function() {
+//     log.info('New Window');
+//   }},
+//   { label: 'New Window with Settings', submenu: [
+//     { label: 'Basic' },
+//     { label: 'Pro' }
+//   ]},
+//   { label: 'New Command...' }
+// ]);
 
-app.dock.setMenu(dockMenu);
+// app.dock.setMenu(dockMenu);
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function() {
