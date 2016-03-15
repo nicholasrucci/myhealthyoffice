@@ -39,10 +39,9 @@ app.on('window-all-closed', function() {
 app.on('ready', function() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 1060,
-    'min-width': 1000,
-    'min-height': 600,
-    resizable: true
+    width: 1100,
+    height: 660,
+    resizable: false
   });
 
   // and load the index.html of the app.
