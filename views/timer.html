@@ -9,7 +9,6 @@
         window.$ = window.jQuery = require('../lib/jquery.min.js');
         window.Hammer = require('../lib/hammer.min.js');
     </script>
-    <script src="../javascripts/timer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <title>Pomodoro Timer</title>
   </head>
@@ -32,14 +31,12 @@
       <div class="wrapper">
         <div class="mainContentTitle">
           Pomodoro Timer
-          <div class="circle-timer-border">
-            <div class="circle-timer"></div>
-          </div>
         </div>
-
+          <canvas id="canvasTimer" width="400" height="400" style="border:1px solid #fff;"></canvas>
       </div>
     </div>
 
     <div id="copyright">Copyright © 2016 My Healthy Office</div>
   </body>
+  <script src="../javascripts/timer.js"></script>
 </html>
