@@ -1,15 +1,22 @@
 'use strict';
 
-function countDown(secs, elem) {
-  var seconds = secs;
-  var element = document.getElementById(elem);
-  var timer = setTimeout('countDown(' + seconds + ',"' + elem + '")', 1000);
+var canvas = document.getElementById('canvasTimer');
+var context = canvas.getContext('2d');
+var centerX = canvas.width / 2;
+var centerY = canvas.height / 2;
+var minutesRadius = 180;
+var secondsRadius = 155;
 
-  element.innerHTML = seconds;
-  if (seconds < 1) {
-    clearTimeout(timer);
-    element.innerHTML = '<h2>Countdown Complete!</h2>';
-    element.innerHTML += '<a href="#">Click here now</a>';
-  }
-  seconds--;
-}
+context.beginPath();
+context.arc(centerX, centerY, minutesRadius, 0, 2 * Math.PI, false);
+context.lineWidth = 15;
+context.strokeStyle = '#ef5350';
+context.stroke();
+context.closePath();
+
+context.beginPath();
+context.arc(centerX, centerY, secondsRadius, 0, 2 * Math.PI, false);
+context.lineWidth = 15;
+context.strokeStyle = '#26a69a';
+context.stroke();
+context.closePath();
