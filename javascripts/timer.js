@@ -1,6 +1,6 @@
 'use strict';
 
-var seconds = 60;
+var seconds = 1500;
 var canvas = document.getElementById('canvasTimer');
 var context = canvas.getContext('2d');
 var centerX = canvas.width / 2;
@@ -9,7 +9,7 @@ var minutesRadius = 180;
 var secondsRadius = 155;
 
 context.beginPath();
-context.arc(centerX, centerY, minutesRadius, 0, 0.1 * Math.PI, false);
+context.arc(centerX, centerY, minutesRadius, 0, 2 * Math.PI, false);
 context.lineWidth = 15;
 context.strokeStyle = '#ef5350';
 context.stroke();
